@@ -1,0 +1,49 @@
+<?php
+$info = array(
+	'0'      => [
+		'id'    => 1,
+		'name'  => "Mohammad Jameel",
+		'Email' => "Mohammad.alawneh@gmail.com",
+		'Phone' => "0777479456",
+		'image' => "Affluent-Women-Mailing-Lists.jpg"
+	],
+	'1'      => [
+		'id'    => 2,
+		'name'  => "Saif Ibrahim",
+		'Email' => "Saif.alawneh@gmail.com",
+		'Phone' => "0777479456",
+		'image' => "Sam-Revilter.jpg"
+	],
+	'2'      => [
+		'id'    => 3,
+		'name'  => "Anas Omar",
+		'Email' => "Anas.omar@gmail.com",
+		'Phone' => "0777479456",
+		'image' => "person-2.jpg"
+	],
+	'3'      => [
+		'id'    => 4,
+		'name'  => "Saad Bassam",
+		'Email' => "Saad.bassam@gmail.com",
+		'Phone' => "0777479456",
+		'image' => "team4-large.jpg"
+	]
+);
+print_r($info);
+echo '<table>';
+foreach ($info as $key => $value) {
+	echo "<tr>";
+	foreach ($value as $key1 => $value1) {
+		echo "<td>".$info[$key][$key1]."</td>";
+	}
+	echo "</tr>";
+}
+echo '</table>';
+echo '<pre>';
+foreach ($info as $key => $value) {
+	print_r($info[$key]);
+	echo '<br>';
+
+}
+print_r($info);
+//$info=array(6,"fawaz","fawaz.Mousa@gmail.com","0777479456","");
